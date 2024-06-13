@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Video Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎦</text></svg>">
+  <style>
+
+  </style>
+</head>
+<body>
+
+   <div class="player-container">
+     <div class="player">
+       <video id="video" class="player__video viewer" src="652333414.mp4"></video>
+
+       <div class="player__controls">
+         <div class="progress">
+          <div class="progress__filled"></div>
+         </div>
+         <button class="player__button toggle" title="Toggle Play">►</button>
+         <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+         <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+         <button data-skip="-10" class="player__button">« 10s</button>
+         <button data-skip="25" class="player__button">25s »</button>
+       </div>
+     </div>
+
+     <button class="full-screen" title="Enter full screen mode">
+      <svg height="14px" version="1.1" viewBox="0 0 14 14" width="14px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+          <g fill="#000000" id="Core" transform="translate(-215.000000, -257.000000)">
+            <g id="fullscreen" transform="translate(215.000000, 257.000000)">
+              <path d="M2,9 L0,9 L0,14 L5,14 L5,12 L2,12 L2,9 L2,9 Z M0,5 L2,5 L2,2 L5,2 L5,0 L0,0 L0,5 L0,5 Z M12,12 L9,12 L9,14 L14,14 L14,9 L12,9 L12,12 L12,12 Z M9,0 L9,2 L12,2 L12,5 L14,5 L14,0 L9,0 L9,0 Z" id="Shape" />
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+   </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
